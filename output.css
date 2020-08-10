@@ -1,0 +1,17 @@
+/* Error: $color: 16px is not a color.
+ *    ,
+ * 14 |   padding: red(16px) blue(8px);
+ *    |            ^^^^^^^^^
+ *    '
+ *   project.scss 14:12  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $color: 16px is not a color.\a    \2577 \a 14 \2502    padding: red(16px) blue(8px);\a    \2502             ^^^^^^^^^\a    \2575 \a   project.scss 14:12  root stylesheet";
+}
